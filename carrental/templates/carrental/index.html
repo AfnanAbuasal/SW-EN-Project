@@ -1,0 +1,10 @@
+{% extends "carrental/layout.html"%}
+
+{%block body%}
+    <h2>Vehicles for renting :</h2>
+    <ul>
+        {% for vehicle in vehicles %}
+            <li>Vehicle : {{vehicle.model}}</li>
+        {% endfor %}
+    </ul>
+{% endblock body%}
