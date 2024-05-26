@@ -1,0 +1,36 @@
+{% extends "carrental/layout.html" %}
+
+{% block body %}
+    <table>
+        <thead>
+            <th>Genre : {{vehicle.genre}}</th>
+            <th>Mileage : {{vehicle.mileage}}</th>  
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fuel Policy : {{vehicle.fuel_policy}}</td>
+                <td>Price Per Day : {{vehicle.price_per_day}}$</td>
+            </tr>
+            <tr>
+                <td>Transmission : {{vehicle.transmission}}</td>
+                <td>Number Of Seats : {{vehicle.no_of_seats}}</td>
+        </tbody>
+        <img src = "{{vehicle.image }}" width = "500" height="400" >
+    </table>
+
+
+    <h2>Book the car</h2>
+        <form action = "{% url 'rent' vehicle.id %}" method="post">
+                {% csrf_token %}
+                <select name="customer" id="">
+                    {% for customer in customers %}
+                        <option value="{{customer.id}}">{{customer}}</option>
+                    {% endfor %}
+                </select>
+            <input type="submit">
+        </form>
+
+    
+   <h5>{{vehicle.customer_id}}
+
+{% endblock body %}

@@ -1,12 +1,28 @@
 div {
-    border: 15px;
+    border: 15px solid black;
     width: 200px;
     height: 200px;
     margin: 50px;
     padding: 50px;
     border-color: black;
+    border-block-color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+div.foo{
+    text-align: left;
 }
 
 body{
     background-color: burlywood;
 }
+img{
+    align-items: start;
+}
+
+h3{
+    vertical-align: text-top;
+    text-align: center;
+}
+
