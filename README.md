@@ -12,7 +12,7 @@ this will make you be able to use admin site to add instances of the classes eas
 ![AdminsiteinDjango](https://github.com/AfnanAbuasal/SW-EN-Project/assets/140003113/9511e616-912b-4aa9-afed-8c415d40f5e2)
 
 
-this is the page two 
+this is page two 
 
 
 ![Pageone](https://github.com/AfnanAbuasal/SW-EN-Project/assets/140003113/082d0118-a051-444e-aaa2-3f9ec3f7aad6)
