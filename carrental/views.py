@@ -18,6 +18,8 @@ def car_det(request, vehicle_id):
         }
     )
     
+    """""
+    No need for this for now
 def rent(request, vehicle_id):
     if request.method=="POST":
         customer_id = int(request.POST["customer"])
@@ -27,7 +29,7 @@ def rent(request, vehicle_id):
         
         return HttpResponseRedirect(reverse("vehicle", args=(vehicle.id,)))
     
-    
+"""
 
         
         

@@ -20,7 +20,7 @@
 
 
     <h2>Book the car</h2>
-        <form action = "{% url 'rent' vehicle.id %}" method="post">
+        <form >
                 {% csrf_token %}
                 <select name="customer" id="">
                     {% for customer in customers %}
